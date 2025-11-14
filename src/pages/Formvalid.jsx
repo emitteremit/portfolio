@@ -46,7 +46,7 @@ const Formvalid = () => {
     <>
       <Header />
       <div className='bg-[#FFDFB9] py-10'>
-        <form onSubmit={handleSubmit} className="flex flex-col w-[30%] mx-[auto] mt-9 space-y-5 text-center bg-[#A4193D] p-5 rounded-lg shadow-md">
+        <form onSubmit={handleSubmit} className="flex flex-col w-[100%] max-w-[500px] mx-[auto] mt-9 space-y-5 text-center bg-[#A4193D] p-5 rounded-lg shadow-md">
           <h2 className='text-2xl font-bold text-[#FFDFB9]'>Contact Form</h2>
           <div className="flex flex-col">
             <label className='text-[#FFDFB9]'>Username</label>

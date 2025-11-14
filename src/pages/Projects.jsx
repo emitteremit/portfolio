@@ -57,7 +57,7 @@ const Projects = () => {
         <h1 className='mb-8 text-[30px] font-semibold'>Click on each project to view the projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <Link to={project.link} key={project.id} target='_blank'>
+            <Link to={project.link} key={project.id}>
               <div className="bg-white rounded-md shadow-md shadow-[#A4193D] h-[500px]" data-aos="fade-up">
                 <img src={project.image} alt={project.title} className="w-full h-48 object-cover mb-4 rounded-md" />
                 <h3 className="text-xl font-bold mb-2 p-6">{project.title}</h3>
