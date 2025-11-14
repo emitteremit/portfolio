@@ -54,14 +54,16 @@ const Projects = () => {
       <Header />
       <section className="py-20 px-4 md:px-8 lg:px-16 xl:px-32">
         <h2 className="text-3xl font-bold text-center mb-8">My Projects</h2>
-        <h1 className='mb-8 text-[30px] font-semibold'>Click on each project to view the projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <Link to={project.link} key={project.id}>
-              <div className="bg-white rounded-md shadow-md shadow-[#A4193D] h-[500px]" data-aos="fade-up">
+              <div className="bg-white rounded-md shadow-md shadow-[#A4193D] h-[100%] max-h-[700px]" data-aos="fade-up">
                 <img src={project.image} alt={project.title} className="w-full h-48 object-cover mb-4 rounded-md" />
                 <h3 className="text-xl font-bold mb-2 p-6">{project.title}</h3>
                 <p className="text-gray-600 p-6">{project.description}</p>
+                <button className='bg-[#A4193D] text-[#FFDFB9] px-4 py-2 ml-[30px] mb-[20px] rounded-md'>
+                  View
+                </button>
               </div>
             </Link>
           ))}

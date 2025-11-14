@@ -12,9 +12,9 @@ const Header = () => {
 
   return (
     <div className='fixed top-0 left-0 w-full bg-[#A4193D] h-[55px] flex justify-between items-center text-[#FFDFB9] z-50'>
-      <div className='ml-5 flex gap-1'>
+      <div className='ml-5 flex gap-1 items-center'>
         <img src={logo} alt="" className='w-10 h-10 rounded-[100%]' />
-        <p className='text-[25px] font-bold font-mono'>Temitope Portfolio</p>
+        <p className=' text-[18px] md:text-[25px] font-bold font-mono '>Temitope Portfolio</p>
       </div>
       <div className='hidden md:flex gap-4 mr-[35px]'>
         <Link to={'/'} className='font-bold hover:text-white capitalize'>home</Link>
@@ -33,7 +33,7 @@ const Header = () => {
       </div>
       <div className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#A4193D] ease-in-out duration-500 z-40' : 'fixed left-[-100%]'}>
         <div className='p-4'>
-          <p className='text-[20px] font-bold font-mono'>Temitope Portfolio</p>
+          <p className='text-[18px] font-bold font-mono'>Temitope Portfolio</p>
         </div>
         <ul className='p-4'>
           <li className='py-4'>
