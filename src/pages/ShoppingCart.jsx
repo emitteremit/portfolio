@@ -56,7 +56,7 @@ const ShoppingCart = () => {
             setErrors({});
             setTimeout(() => {
                 setShowForm(false);
-            }, 1000);
+            }, 1);
         }
     };
 

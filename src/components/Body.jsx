@@ -28,7 +28,7 @@ const Body = () => {
           <div className='hidden md:block'>
       </div>
           <p className='mt-4 text-[16px]'>Specialize in building user-centric web applications</p>
-        <button className='bg-[#A4193D] text-[#FFDFB9] rounded-lg p-2 mr-5'>
+        <button className='bg-[#A4193D] text-[#FFDFB9] rounded-lg p-2 mr-5 mt-5'>
           <Link to='/contact'>
           contact me
           </Link>
